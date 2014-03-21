@@ -1,0 +1,1 @@
+CREATE TABLE packages (id INTEGER PRIMARY KEY, name TEXT UNIQUE, status INTEGER, popcon_inst INTEGER);
