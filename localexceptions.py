@@ -6,9 +6,11 @@ SHA_FINGERPRINTING = 4
 DEBIAN_TIME_WARP = 5 # debian is shipping sorce code that hasn't shipped yet
 WATCHFILE_IS_MEANINGLESS = 6 # pointless to have a watchfile
 GITWEB = 7 # if a generic gitweb scraper is written it can be used
+BTS = 8 # a bug is opened in BTS to fix it
 
 overrides = {
    "dkg-handwriting": DEBIAN_IS_UPSTREAM,
+   "lvm2": BTS, # 742305
    "mawk": NO_UPSTREAM_WEBPAGE,
    "netkit-ftp": NO_UPSTREAM_WEBPAGE,
    "netkit-ntalk": NO_UPSTREAM_WEBPAGE,
@@ -65,7 +67,14 @@ overrides = {
    "xcal": NO_UPSTREAM_WEBPAGE,
    "xcite": SHA_FINGERPRINTING,
    "xcolmix": NO_UPSTREAM_WEBPAGE,
-
-
+   "xcolors": NO_UPSTREAM_WEBPAGE,
+   "xd": DEBIAN_TIME_WARP,
+   "xdmf": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
+   "xdrawchem": DEBIAN_TIME_WARP,
+   "xdvik-ja": NO_UPSTREAM_WEBPAGE,
+   "xemacs21": BTS, #744089
+   "xemacs21-packages": WATCHFILE_IS_MEANINGLESS,
+   "xen": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
+   "xerces-c": BTS, #744092
 
 }
