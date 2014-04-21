@@ -38,6 +38,11 @@ LINTIAN_WATCH_PUBKEY_IS_MISSING_OVERRIDDEN = 25
 conn = sqlite3.connect('db.sqlite3')
 c = conn.cursor()
 
+# make sure your custom edits wind up in this script :)
+# this avoids the situation where a package gets a watch by itself
+# and thus disappears off the radar
+c.execute('DELETE FROM packages')
+
 def upsert(package, status):
    c.execute('SELECT id FROM packages WHERE name = ?', (package,))
    package_id = c.fetchall()
