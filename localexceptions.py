@@ -20,6 +20,13 @@ overrides = {
    "netkit-rwho": NO_UPSTREAM_WEBPAGE,
    "netkit-telnet": NO_UPSTREAM_WEBPAGE,
    "netkit-tftp": NO_UPSTREAM_WEBPAGE,
+   "picon-domains": SHA_FINGERPRINTING,
+   "picon-misc": SHA_FINGERPRINTING,
+   "picon-news": SHA_FINGERPRINTING,
+   "picon-unknown": SHA_FINGERPRINTING,
+   "picon-usenix": SHA_FINGERPRINTING,
+   "picon-users": SHA_FINGERPRINTING,
+   "picon-weather": SHA_FINGERPRINTING,
    "python-pam": NO_UPSTREAM_WEBPAGE,
    "woff-tools": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
    "woof": SHA_FINGERPRINTING,
@@ -76,5 +83,18 @@ overrides = {
    "xemacs21-packages": WATCHFILE_IS_MEANINGLESS,
    "xen": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
    "xerces-c": BTS, #744092
+   "xf86-input-multitouch": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
+   "xflip": NO_UPSTREAM_WEBPAGE,
+   "xfonts-a12k12": NO_UPSTREAM_WEBPAGE,
+   "xfonts-ayu": NO_UPSTREAM_WEBPAGE,
+   "xfonts-biznet": NO_UPSTREAM_WEBPAGE,
+   "xfonts-cronyx": NO_UPSTREAM_WEBPAGE,
+   "xfonts-jisx0213": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
+   "xfonts-kaname": NO_UPSTREAM_WEBPAGE,
+   "xfonts-kappa20": NO_UPSTREAM_WEBPAGE,
+   "xfonts-naga10": NO_UPSTREAM_WEBPAGE,
+   "xfonts-nexus": NO_UPSTREAM_WEBPAGE,
+   "xfonts-scalable-nonfree": WATCHFILE_IS_MEANINGLESS, # there's a script in there to pull the latest versions from the xfree86 cvs repo
+   "xgammon": NO_UPSTREAM_WEBPAGE,
 
 }
