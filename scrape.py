@@ -122,7 +122,7 @@ os.chdir('../../')
 
 print 'adding local exceptions'
 t = etree.parse('localexceptions.xml').getroot()
-for exception in t:
+for exception in t.xpath('exception'):
    upsert(exception.xpath('package')[0].text, LOCAL_OVERRIDE)
 
 print 'updating popcon'
