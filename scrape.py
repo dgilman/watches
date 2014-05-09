@@ -4,8 +4,6 @@ import os
 import urllib
 import subprocess
 
-import localexceptions
-
 LINTIAN_WATCH_FILE_IS_MISSING = 0
 WATCH_FILE_IN_SEPWATCH = 1
 WATCH_FILE_USCAN_ERRORS = 2
@@ -120,10 +118,12 @@ for line in mods.splitlines():
    _, package = line.split('/')
    package = package.split('_')[0]
    upsert(package, LOCAL_WATCHFILE)
+os.chdir('../../')
 
 print 'adding local exceptions'
-for override in localexceptions.overrides:
-   upsert(override, LOCAL_OVERRIDE)
+t = etree.parse('localexceptions.xml').getroot()
+for exception in t:
+   upsert(exception.xpath('package')[0].text, LOCAL_OVERRIDE)
 
 print 'updating popcon'
 for package_info in urllib.urlopen('http://popcon.debian.org/sourcemax/by_inst'):
