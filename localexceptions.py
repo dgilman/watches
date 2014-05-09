@@ -9,9 +9,18 @@ GITWEB = 7 # if a generic gitweb scraper is written it can be used
 BTS = 8 # a bug is opened in BTS to fix it
 
 overrides = {
+   "aptitude": DEBIAN_IS_UPSTREAM,
+   "blas": SHA_FINGERPRINTING,
+   "cwidget": GITWEB,
+   "discover": NO_UPSTREAM_WEBPAGE,
    "dkg-handwriting": DEBIAN_IS_UPSTREAM,
+   "libemu": DEBIAN_TIME_WARP,
+   "liblockfile": NO_UPSTREAM_WEBPAGE,
+   "linux-ntfs": NO_UPSTREAM_WEBPAGE,
    "lvm2": BTS, # 742305
    "mawk": NO_UPSTREAM_WEBPAGE,
+   "mpclib": BTS, # 747468
+   "netcat": NO_UPSTREAM_WEBPAGE, # actually, there is at http://techno-fandom.org/~hobbit/ but you'll never see a release from them
    "netkit-ftp": NO_UPSTREAM_WEBPAGE,
    "netkit-ntalk": NO_UPSTREAM_WEBPAGE,
    "netkit-rsh": NO_UPSTREAM_WEBPAGE,
@@ -20,6 +29,7 @@ overrides = {
    "netkit-rwho": NO_UPSTREAM_WEBPAGE,
    "netkit-telnet": NO_UPSTREAM_WEBPAGE,
    "netkit-tftp": NO_UPSTREAM_WEBPAGE,
+   "ntfsdoc": NO_UPSTREAM_WEBPAGE,
    "picon-domains": SHA_FINGERPRINTING,
    "picon-misc": SHA_FINGERPRINTING,
    "picon-news": SHA_FINGERPRINTING,
@@ -27,7 +37,10 @@ overrides = {
    "picon-usenix": SHA_FINGERPRINTING,
    "picon-users": SHA_FINGERPRINTING,
    "picon-weather": SHA_FINGERPRINTING,
+   "pyew": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
    "python-pam": NO_UPSTREAM_WEBPAGE,
+   "redmine-recaptcha": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
+   "sudo": BTS, # 747473
    "woff-tools": UNSCRIPTABLE_UPSTREAM_WEBPAGE,
    "woof": SHA_FINGERPRINTING,
    "wordplay": NO_UPSTREAM_WEBPAGE,
