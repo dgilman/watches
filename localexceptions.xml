@@ -12,6 +12,8 @@ DEBIAN_TIME_WARP # debian is shipping sorce code that hasn't officially been rel
 WATCHFILE_IS_MEANINGLESS # pointless to have a watchfile
 GITWEB # if a generic gitweb scraper is written it can be used
 BTS # a bug is opened in BTS to fix it. comment is the bug number
+ALIOTH # alioth is all kinds of buggy, needs user logins, etc, could use a custom downloader
+BITBUCKET
 
 -->
   <!-- this first exception exemplifies all of the relevant tags -->
@@ -19,6 +21,55 @@ BTS # a bug is opened in BTS to fix it. comment is the bug number
     <package>lvm2</package>
     <status>BTS</status>
     <comment>742305</comment>
+  </exception>
+  <exception>
+    <package>fakeroot</package>
+    <status>DEBIAN_IS_UPSTREAM</status>
+  </exception>
+  <exception>
+    <package>sgml-data</package>
+    <status>DEBIAN_IS_UPSTREAM</status>
+  </exception>
+  <exception>
+    <package>blacs-pvm</package>
+    <status>SHA_FINGERPRINTING</status>
+    <comment>http://www.netlib.org/blacs/</comment>
+  </exception>
+  <exception>
+    <package>blacs-mpi</package>
+    <status>SHA_FINGERPRINTING</status>
+    <comment>http://www.netlib.org/blacs/</comment>
+  </exception>
+  <exception>
+    <package>makehuman</package>
+    <status>BITBUCKET</status>
+    <comment>https://bitbucket.org/MakeHuman/makehuman</comment>
+  </exception>
+  <exception>
+    <package>mgetty</package>
+    <status>BTS</status>
+    <comment>747491</comment>
+  </exception>
+  <exception>
+    <package>scalapack-doc</package>
+    <status>WATCHFILE_IS_MEANINGLESS</status>
+  </exception>
+  <exception>
+    <package>netpbm-free</package>
+    <status>DEBIAN_IS_UPSTREAM</status>
+  </exception>
+  <exception>
+    <package>libutempter</package>
+    <status>BTS</status>
+    <comment>747483</comment>
+  </exception>
+  <exception>
+    <package>sane-backends</package>
+    <status>ALIOTH</status>
+  </exception>
+  <exception>
+    <package>makedev</package>
+    <status>NO_UPSTREAM_WEBPAGE</status>
   </exception>
   <exception>
     <package>aptitude</package>
