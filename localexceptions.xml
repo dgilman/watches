@@ -23,6 +23,63 @@ BITBUCKET
     <comment>742305</comment>
   </exception>
   <exception>
+    <package>zzuf</package>
+    <status>DEBIAN_TIME_WARP</status>
+  </exception>
+  <exception>
+    <package>zpb-ttf</package>
+    <status>SHA_FINGERPRINTING</status>
+    <comment>http://www.xach.com/lisp/zpb-ttf.tgz</comment>
+  </exception>
+  <exception>
+    <package>zoomer</package>
+    <status>SHA_FINGERPRINTING</status>
+    <comment>http://wiki.colivre.net/pub/Aurium/Zoomer/zoomer</comment>
+  </exception>
+  <exception>
+    <package>zmakebas</package>
+    <status>NO_UPSTREAM_WEBPAGE</status>
+  </exception>
+  <exception>
+    <package>zivot</package>
+    <status>NO_UPSTREAM_WEBPAGE</status>
+  </exception>
+  <exception>
+    <package>zipios++</package>
+    <status>NO_UPSTREAM_WEBPAGE</status>
+  </exception>
+  <exception>
+    <package>zanshin</package>
+    <status>CHILIPROJECT_UPSTREAM</status>
+    <comment>https://projects.kde.org/projects/playground/pim/zanshin/repository</comment>
+  </exception>
+  <exception>
+    <package>zomg</package>
+    <status>DEBIAN_IS_UPSTREAM</status>
+  </exception>
+  <exception>
+    <package>yydebug</package>
+    <status>SHA_FINGERPRINTING</status>
+  </exception>
+  <exception>
+    <package>yubikey-server-c</package>
+    <status>DEBIAN_IS_UPSTREAM</status>
+  </exception>
+  <exception>
+    <package>yics</package>
+    <status>UNSCRIPTABLE_UPSTREAM_WEBPAGE</status>
+    <comment>this is dead and never coming back; working to get it removed from debian</comment>
+  </exception>
+  <exception>
+    <package>ygraph</package>
+    <status>UNSCRIPTABLE_UPSTREAM_WEBPAGE</status>
+    <comment>http://cactuscode.org/documentation/visualization/yGraph/</comment>
+  </exception>
+  <exception>
+    <package>yappy</package>
+    <status>NO_UPSTREAM_WEBPAGE</status>
+  </exception>
+  <exception>
     <package>sqlite</package>
     <status>NO_UPSTREAM_WEBPAGE</status>
   </exception>
