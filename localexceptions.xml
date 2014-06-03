@@ -123,7 +123,7 @@ BITBUCKET
   <exception>
     <package>xmhtml</package>
     <status>NO_UPSTREAM_WEBPAGE</status>
-    <comment>New upstream at http://sourceforge.net/projects/xmhtml/</status>
+    <comment>New upstream at http://sourceforge.net/projects/xmhtml/</comment>
   </exception>
   <exception>
     <package>xjump</package>
