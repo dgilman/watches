@@ -50,6 +50,10 @@ BITBUCKET
     <comment>http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO5/BOUNDARY/WVS/WVS1.DAT</comment>
   </exception>
   <exception>
+    <package>xvt</package>
+    <status>NO_UPSTREAM_WEBPAGE</status>
+  </exception>
+  <exception>
     <package>xtv</package>
     <status>NO_UPSTREAM_WEBPAGE</status>
   </exception>
@@ -66,7 +70,7 @@ BITBUCKET
     <status>NO_UPSTREAM_WEBPAGE</status>
   </exception>
   <exception>
-    <package>xsettings</package>
+    <package>xsettingsd</package>
     <status>DEBIAN_TIME_WARP</status>
     <comment>no official release https://github.com/derat/xsettingsd</comment>
   </exception>
